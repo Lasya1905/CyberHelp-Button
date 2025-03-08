@@ -13,7 +13,7 @@ CyberHelp Button is an AI-powered emergency response app that detects AI-generat
 - The **code and output** presented in the PPT for the **SOS Signal** have been implemented using **Kotlin**.
 ---
 
-## 📂 Project Structure & Important Files  
+## 📂 SOS Button : Project Structure & Important Files  
 
 ### 1️⃣ **Main App Logic**  
 - **`app/src/main/java/com/example/sosbutton/MainActivity.kt`**  
