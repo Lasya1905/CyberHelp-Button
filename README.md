@@ -21,13 +21,13 @@ CyberHelp Button is an AI-powered emergency response app that detects AI-generat
 - **`app/src/main/java/com/example/sosbutton/SOSService.kt`**  
   - Manages the background service for detecting long-press on the SOS button.  
 
-# 2️⃣ **UI & Layouts**  
+### 2️⃣ **UI & Layouts**  
 - **`app/src/main/res/layout/activity_main.xml`**  
   - Defines the UI layout for the main screen.  
 - **`app/src/main/res/values/strings.xml`**  
   - Contains all the text strings used in the app.  
 
-#3️⃣ **Configuration & Dependencies**  
+### 3️⃣ **Configuration & Dependencies**  
 - **`build.gradle.kts`**  
   - Contains project dependencies and configurations.  
 - **`gradle.properties`**  
