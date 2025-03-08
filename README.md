@@ -2,6 +2,15 @@
 
 CyberHelp Button is an AI-powered emergency response app that detects AI-generated voice impersonation and deepfake-related issues. It also acts as an SOS button, allowing users in India to quickly contact emergency services with a single long-press function.  
 
+
+
+***This Project consists of a Deepfake Voice Detector and an SOS Signal Button.***  
+✅ The **SOS Signal Button** has been coded:  
+- **Using Kotlin** for the actual project.  
+- **Using HTML, CSS, and JavaScript** for better accessibility.  
+
+⚠️ **Note:**  
+- The **code and output** presented in the PPT for the **SOS Signal** have been implemented using **Kotlin**.
 ---
 
 ## 📂 Project Structure & Important Files  
