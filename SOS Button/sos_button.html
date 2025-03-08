@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SOS Button</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #121212;
+            margin: 0;
+        }
+        .sos-button {
+            width: 150px;
+            height: 150px;
+            background-color: red;
+            border: none;
+            border-radius: 50%;
+            color: white;
+            font-size: 24px;
+            font-weight: bold;
+            cursor: pointer;
+            box-shadow: 0 0 20px rgba(255, 0, 0, 0.8);
+            animation: pulse 1.5s infinite;
+        }
+        @keyframes pulse {
+            0% { box-shadow: 0 0 10px rgba(255, 0, 0, 0.8); }
+            50% { box-shadow: 0 0 30px rgba(255, 0, 0, 1); }
+            100% { box-shadow: 0 0 10px rgba(255, 0, 0, 0.8); }
+        }
+    </style>
+</head>
+<body>
+    <button class="sos-button" id="sosButton">SOS</button>
+
+    <script>
+        let pressTimer;
+        const sosButton = document.getElementById("sosButton");
+
+        sosButton.addEventListener("touchstart", () => {
+            pressTimer = setTimeout(() => {
+                window.location.href = "tel:9121074124";
+            }, 4000); // 4-second long press
+        });
+
+        sosButton.addEventListener("touchend", () => {
+            clearTimeout(pressTimer);
+        });
+
+        sosButton.addEventListener("mousedown", () => {
+            pressTimer = setTimeout(() => {
+                window.location.href = "tel:9121074124";
+            }, 4000);
+        });
+
+        sosButton.addEventListener("mouseup", () => {
+            clearTimeout(pressTimer);
+        });
+
+        sosButton.addEventListener("mouseleave", () => {
+            clearTimeout(pressTimer);
+        });
+    </script>
+</body>
+</html>
